@@ -1,0 +1,19 @@
+<header>
+  <nav>
+    <a href="/"><img alt="Logo" src="/logo.svg" height="70"></a>
+  </nav>
+  <h1>Vegan real food</h1>
+
+</header>
+
+<main>
+  <hr>
+    <section id="section-1">
+      <% @foods.each do |food| %>
+        <aside>
+          <%= render food %>
+        </aside>
+      <% end %>
+    </section>
+  </hr>
+</main>
