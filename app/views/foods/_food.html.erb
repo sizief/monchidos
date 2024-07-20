@@ -1,4 +1,4 @@
-<%= image_tag food.picture %>
+<%= image_tag food.picture.variant(resize_to_limit: [600, 600]) %>
 
 <h3>
   <%= food.name %>
